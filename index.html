@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="js/slideTab.js" type="text/javascript"></script>
+    <title>IRIS web component</title>  
+</head>
+
+<body onload="document.getElementById('defaultOpen').click();">   
+    <!-- NAVBAR -->
+<nav style="top: 0">
+    <div class="wrapper">
+      <div class="logo"><a href="#">Logo</a></div>
+      <input type="radio" name="slider" id="menu-btn">
+      <input type="radio" name="slider" id="close-btn">
+      <ul class="nav-links">
+        <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+        <li>
+            <a href="#" class="desktop-item">ПРОДУКТИ</a>
+            <input type="checkbox" id="showMega">
+            <label for="showMega" class="mobile-item">ПРОДУКТИ</label>
+            <div class="mega-box">
+              <div class="content">
+                <div class="row grid" style="display: flex;">
+                    <div class="row products-left" href="">
+                        <header>Продукти</header>
+                        <div class="separator"></div>
+                        <p>Чрез платформата Openbanking.bg Айрис Солюшънс предлага решение на цялата финансова екосистема, което да подобри
+                            функционалността на статуса на публичните интерфейси, осигурявайки регулаторно съответствие и възможност за иновативно развитие.
+                        </p>
+                    </div>
+                    <div class="dropdown-links">
+                        <div class="row" href="">
+                            <img src="images/urn_aaid_sc_US_40ec7e48-0631-4bba-96a1-5fb5264d444a (5).png">
+                            <p>Агрегиране на сметки</p>
+                        </div>
+                        <div class="row" href="">
+                            <img src="images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (14).png">
+                            <p>Анализ и обработка на данни</p>
+                        </div>
+                    </div>
+                    
+                    <div class="dropdown-links">
+                        <div class="row" href="">
+                            <img src="images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (13).png">
+                            <p>Доставка на информация по сметка</p>
+                        </div>
+                        <div class="row" href="">
+                            <img src="images/urn_aaid_sc_US_40ec7e48-0631-4bba-96a1-5fb5264d444a (4).png">
+                            <p>Мониторинг на АПИ</p>
+                        </div>
+                    </div>
+                    <div class="dropdown-links">
+                        <div class="row" href="">
+                            <img src="images/urn_aaid_sc_US_40ec7e48-0631-4bba-96a1-5fb5264d444a (2).png">
+                            <p>Иницииране на плащане</p>
+                        </div>
+                    </div>
+              </div>
+            </div>
+            </div>
+          </li>
+          <li>
+            <a href="#" class="desktop-item">ПРИЛОЖЕНИЕ</a>
+            <input type="checkbox" id="showMega">
+            <label for="showMega" class="mobile-item">ПРИЛОЖЕНИЕ</label>
+            <div class="mega-box">
+              <div class="content">
+                <div class="row grid" style="display: flex;">
+                    <div class="row products-left" href="">
+                        <header>Индустрии</header>
+                        <div class="separator"></div>
+                        <p>Чрез платформата Openbanking.bg Айрис Солюшънс предлага решение на цялата финансова екосистема, което да подобри
+                            функционалността на статуса на публичните интерфейси, осигурявайки регулаторно съответствие и възможност за иновативно развитие.
+                        </p>
+                    </div>
+                    <div class="dropdown-links">
+                        <div class="row" href="">
+                            <img src="images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65.png">
+                            <p>Счетоводство и управление на процеси</p>
+                        </div>
+                        <div class="row" href="">
+                            <img src="images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (3).png">
+                            <p>Дигитално Банкиране</p>
+                        </div>
+                        <div class="row" href="">
+                            <img src="images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (6).png">
+                            <p>Електронна търговия</p>
+                        </div>
+                    </div>
+                    
+                    <div class="dropdown-links">
+                        <div class="row" href="">
+                            <img src="images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (1).png">
+                            <p>Програми за лоялност</p>
+                        </div>
+                        <div class="row" href="">
+                            <img src="images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (4).png">
+                            <p>Кредитиране</p>
+                        </div>
+                        <div class="row" href="">
+                            <img src="images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (13).png">
+                            <p>TPP</p>
+                        </div>
+                    </div>
+                    <div class="dropdown-links">
+                        <div class="row" href="">
+                            <img src="images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (2).png">
+                            <p>Лични Финанси</p>
+                        </div>
+                        <div class="row" href="">
+                            <img src="images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (5).png">
+                            <p>Оценка на риска</p>
+                        </div>
+                        <div class="row" href="">
+                            <img src="images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (14).png">
+                            <p>KYC</p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        <!-- <li>
+          <a href="#" class="desktop-item">Dropdown Menu</a>
+          <input type="checkbox" id="showDrop">
+          <label for="showDrop" class="mobile-item">Dropdown Menu</label>
+          <ul class="drop-menu">
+            <li><a href="#">Drop menu 1</a></li>
+            <li><a href="#">Drop menu 2</a></li>
+            <li><a href="#">Drop menu 3</a></li>
+            <li><a href="#">Drop menu 4</a></li>
+          </ul>
+        </li> -->
+        <li><a href="#">ТЪРГОВЦИ</a></li>
+        <li>
+            <a href="#" class="desktop-item">ДЕВ ПОРТАЛ</a>
+            <input type="checkbox" id="showMega">
+            <label for="showMega" class="mobile-item">ДЕВ ПОРТАЛ</label>
+            <div class="mega-box">
+              <div class="content">
+                <div class="row grid" style="display: flex;">
+                    <div class="row products-left" href="">
+                        <header>Дев Портал</header>
+                        <div class="separator"></div>
+                        <p>Чрез платформата Openbanking.bg Айрис Солюшънс предлага решение на цялата финансова екосистема, което да подобри
+                            функционалността на статуса на публичните интерфейси, осигурявайки регулаторно съответствие и възможност за иновативно развитие.
+                        </p>
+                    </div>
+
+                    <div class="dropdown-links1">
+                        <header>Ресурси</header>
+                        <div class="separator1"></div>
+                        <a href="">Как да започнем?</a>
+                        <a href="">Документация</a>
+                        <a href="">Често задавани въпроси</a>
+                        <a href="">Регистрация</a>
+                    </div>
+              </div>
+            </div>
+            </div>
+          </li>
+        <li><a href="#">БЛОГ</a></li>
+        <li>
+            <a href="#" class="desktop-item">ЗА НАС</a>
+            <input type="checkbox" id="showMega">
+            <label for="showMega" class="mobile-item">ЗА НАС</label>
+            <div class="mega-box">
+              <div class="content">
+                <div class="row grid" style="display: flex;">
+                    <div class="row products-left" href="">
+                        <header>Продукти</header>
+                        <div class="separator"></div>
+                        <p>Чрез платформата Openbanking.bg Айрис Солюшънс предлага решение на цялата финансова екосистема, което да подобри
+                            функционалността на статуса на публичните интерфейси, осигурявайки регулаторно съответствие и възможност за иновативно развитие.
+                        </p>
+                    </div>
+
+                    <div class="dropdown-links1">
+                        <header>Ресурси</header>
+                        <div class="separator1"></div>
+                        <a href="">Презентация</a>
+                        <a href="">Ръководство на услугите</a>
+                        <a href="">White papers</a>
+                    </div>
+
+                    <div class="dropdown-links1">
+                        <header>Контакти</header>
+                        <div class="separator2"></div>
+                        <p>0887 267 019; 0889 209 055</p>
+                        <p>g.dimitrova@irisbgsf.com</p>
+                        <p>bdo@irisbgsf.com</p>
+                    </div>
+              </div>
+            </div>
+            </div>
+          </li>
+      </ul>
+      <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+    </div>
+  </nav>
+  <!-- END NAVBAR --> 
+    <!-- PRODUCT --> 
+    <!-- Tab links -->
+    <div style="margin-top: 150px;">
+        <h1 style="text-align: center; margin-bottom: 100px;">НАШИТЕ ПРОДУКТИ</h1>
+    </div>
+    <div class="tab">
+        <button class="tablinks active"  onclick="openTab(event, 'Account info')" id="defaultOpen" >
+            <div class="slider"></div>
+            <img class="" src="./images/urn_aaid_sc_US_40ec7e48-0631-4bba-96a1-5fb5264d444a.png" alt="" />
+            <h4>ДОСТАВКА НА ИНФОРМАЦИЯ ПО СМЕТКА</h4>
+        </button>
+    
+        <button class="tablinks active" onclick="openTab(event, 'Payment')">
+            <img class="" src="./images/urn_aaid_sc_US_40ec7e48-0631-4bba-96a1-5fb5264d444a (2).png" alt="" />
+            <h4>ИНИЦИИРАНЕ НА ПЛАЩАНЕ</h4>
+        </button>
+        <button class="tablinks active" onclick="openTab(event, 'Data processing')">
+            <img class="" src="./images/urn_aaid_sc_US_40ec7e48-0631-4bba-96a1-5fb5264d444a (3).png" alt="" />
+            <h4>АНАЛИЗ И ОБРАБОТКА НА ДАННИ</h4>
+        </button>
+        <button class="tablinks active" onclick="openTab(event, 'API Monitoring')">
+            <img class="" src="./images/urn_aaid_sc_US_40ec7e48-0631-4bba-96a1-5fb5264d444a (4).png" alt="" />
+            <h4>МОНИТОРИНГ НА АПИ</h4>
+        </button>
+        <button class="tablinks active" onclick="openTab(event, 'Account agreggation')">
+            <img class="" src="./images/urn_aaid_sc_US_40ec7e48-0631-4bba-96a1-5fb5264d444a (5).png" alt="" />
+            <h4>АГРЕГИРАНЕ НА СМЕТКИ</h4>
+        </button>
+    </div>
+    
+    <!-- Tab content -->
+    <div id="Account info" class="tabcontent animated fadeInRight">
+        <div class="container">
+            <div class="products-row">
+                <div class="products-img">
+                    <img class="" src="./images/urn_aaid_sc_US_40ec7e48-0631-4bba-96a1-5fb5264d444a (1).png" alt="" />
+                </div>
+                <div class="products-txt">
+                    <h2>ДОСТАВКА НА ИНФОРМАЦИЯ ПО СМЕТКА</h2>
+                    <p>Ние осигуряваме достъп до банковата сметка на клиента. Чрез този достъп притежателят на сметката може да споделя историята 
+                        на своите транзакции и информацията за самоличността си, потвърдена от неговата банка.</p>
+                        <div class="products-btn">
+                            <button class="learn-more-btn"><a href="#">Научи повече</a></button>
+                            <button class="ask-btn"><a href="#">Запитване</a></button>
+                        </div>
+                        
+                </div>
+            </div>
+        </div> 
+    </div>
+    
+    <div id="Payment" class="tabcontent animated fadeInRight">
+        <div class="container">
+            <div class="products-row">
+                <div class="products-img">
+                    <img class="" src="./images/urn_aaid_sc_US_40ec7e48-0631-4bba-96a1-5fb5264d444a (1).png" alt="" />
+                </div>
+                <div class="products-txt">
+                    <h2>ИНИЦИИРАНЕ НА ПЛАЩАНЕ</h2>
+                    <p>Ние осигуряваме достъп до банковата сметка на клиента. Чрез този достъп притежателят на сметката може 
+                        да споделя историята на своите транзакции и информация за наличността си, потвърдена от неговата банка</p>
+                        <div class="products-btn">
+                            <button class="learn-more-btn"><a href="#">Научи повече</a></button>
+                            <button class="ask-btn"><a href="#">Запитване</a></button>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="Data processing" class="tabcontent animated fadeInRight">
+        <div class="container">
+            <div class="products-row">
+                <div class="products-img">
+                    <img class="" src="./images/urn_aaid_sc_US_40ec7e48-0631-4bba-96a1-5fb5264d444a (1).png" alt="" />
+                </div>
+                <div class="products-txt">
+                    <h2>АНАЛИЗ И ОБРАБОТКА НА ДАННИ</h2>
+                    <p>Многофункционално решение за анализ и обработка на транзакции. Поддържа всички основни сфери на приложение на 
+                        отвореното банкиране.</p>
+                        <div class="products-btn">
+                            <button class="learn-more-btn"><a href="#">Научи повече</a></button>
+                            <button class="ask-btn"><a href="#">Запитване</a></button>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="API Monitoring" class="tabcontent animated fadeInRight">
+            <div class="container">
+                <div class="products-row">
+                    <div class="products-img">
+                        <img class="" src="./images/urn_aaid_sc_US_40ec7e48-0631-4bba-96a1-5fb5264d444a (1).png" alt="" />
+                    </div>
+                    <div class="products-txt">
+                        <h2>МОНИТОРИНГ НА АПИ</h2>
+                        <p>Ние осигуряваме достъп до банковата сметка на клиента. Чрез този достъп притежателят на сметката може 
+                            да споделя историята на своите транзакции и информация за наличността си, потвърдена от неговата банка</p>
+                            <div class="products-btn">
+                                <button class="learn-more-btn"><a href="#">Научи повече</a></button>
+                                <button class="ask-btn"><a href="#">Запитване</a></button>
+                            </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+
+    <div id="Account agreggation" class="tabcontent animated fadeInRight">
+        <div class="container">
+            <div class="products-row">
+                <div class="products-img">
+                    <img class="" src="./images/urn_aaid_sc_US_40ec7e48-0631-4bba-96a1-5fb5264d444a (1).png" alt="" />
+                </div>
+                <div class="products-txt">
+                    <h2>АГРЕГИРАНЕ НА СМЕТКИ</h2>
+                    <p>PSD2 HUB на "Айрис Солюшънс" е платформа, която изпълнява функциите на агрегатор на данни във връзка  с 
+                        реализацията на услугата по доставка на информация по сметка</p>
+                        <div class="products-btn">
+                            <button class="learn-more-btn"><a href="#">Научи повече</a></button>
+                            <button class="ask-btn"><a href="#">Запитване</a></button>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END PRODUCT -->
+    
+    <div style="margin-top: 100px;"></div>
+    
+    <!-- IUSE CASES -->
+    <!-- Tab links -->
+    <div style="margin-top: 150px;">
+        <h1 style="text-align: center; margin-bottom: 100px;">СФЕРИ НА ПРИЛОЖЕНИЕ</h1>
+    </div>
+    <div class="tab">
+        <button class="tablinks active"  onclick="openTab(event, 'Accounting')" id="defaultOpen" >
+            <img class="" src="./images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65.png" alt="" />
+            <h4>СЧЕТОВОДСТВО И УПРАВЛЕНИЕ НА ПРОЦЕСИ</h4>
+        </button>
+    
+        <button class="tablinks active" onclick="openTab(event, 'Loyality')">
+            <img class="" src="./images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (1).png" alt="" />
+            <h4>ПРОГРАМА ЗА ЛОЯЛНОСТ</h4>
+        </button>
+        <button class="tablinks active" onclick="openTab(event, 'Personal finance')">
+            <img class="" src="./images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (2).png" alt="" />
+            <h4>ЛИЧНИ ФИНАНСИ</h4>
+        </button>
+        <button class="tablinks active" onclick="openTab(event, 'Digital banking')">
+            <img class="" src="./images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (3).png" alt="" />
+            <h4>ДИГИТАЛНО БАНКИРАНЕ</h4>
+        </button>
+        <button class="tablinks active" onclick="openTab(event, 'Lending')">
+            <img class="" src="./images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (4).png" alt="" />
+            <h4>КРЕДИТИРАНЕ</h4>
+        </button>
+        <button class="tablinks active" onclick="openTab(event, 'Risk assessment')">
+            <img class="" src="./images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (5).png" alt="" />
+            <h4>ОЦЕННКА НА РИСКА</h4>
+        </button>
+    </div>
+    <div class="tab1">
+        <button class="tablinks active" onclick="openTab(event, 'E-commerce')">
+            <img class="" src="./images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (6).png" alt="" />
+            <h4>ЕЛЕКТРОННА ТЪРГОВИЯ</h4>
+        </button>
+        <button class="tablinks active" onclick="openTab(event, 'TPP')">
+            <img class="" src="./images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (13).png" alt="" />
+            <h4>ТРР</h4>
+        </button>
+        <button class="tablinks active" onclick="openTab(event, 'KYC')">
+            <img class="" src="./images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (14).png" alt="" />
+            <h4>KYC</h4>
+        </button>
+    </div>
+
+    <!-- Tab content -->
+    <div id="Accounting" class="tabcontent animated fadeInRight">
+        <div class="use-cases">
+            <h1>СЧЕТОВОДСТВО И УПРАВЛЕНИЕ НА ПРОЦЕСИ</h1>
+            <p>Програмата е уникално решение, което позволява на нашите лоялни компании да отключат силата на отвореното 
+                банкиране по съвместим начин дори при липса на собствен лиценз за AISP, с минимални ресурси. Чрез ПРОГРАМА ЛОЯЛНОСТ 
+                компаниите могат да започнат да използват PSD2 канали с данни в реално време от целия ЕС. Айрис се занимава с всички 
+                технически въпроси, въпроси, за сигурността и т.н., така че нашите партньори могат да се фокусират върху предоставянето 
+                на страхотни услуги.</p>
+        </div>
+        <div class="usability">
+            <div class="usability-icon">
+                <img src="./images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (7).png" alt="">
+                <h4>МИНИМАЛНИ РЕСУРСИ</h4>
+            </div>
+            <div class="usability-icon">
+                <img src="./images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (10).png" alt="">
+                <h4>ДОПЪЛНИТЕЛНА СТОЙНОСТ</h4>
+            </div>
+            <div class="usability-icon">
+                <img src="./images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (8).png" alt="">
+                <h4>СВЕТОВНА СВЪРЗАНОСТ</h4>
+            </div>
+            <div class="usability-icon">
+                <img src="./images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (9).png" alt="">
+                <h4>БЕЗ ТАКСА ИНФРАСТРУКТУРА</h4>
+            </div>
+            <div class="usability-icon">
+                <img src="./images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (11).png" alt="">
+                <h4>ПОЕМАНЕ НА PCU ПРОЦЕСИ</h4>
+            </div>
+            <div class="usability-icon">
+                <img src="./images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (12).png" alt="">
+                <h4>ЛЕСНО МОДИФИЦИРАНЕ</h4>
+            </div>
+        </div>
+
+        <div class="use-cases-btn">
+            <button class="see-more-btn"><a href="#">Виж още</a></button>
+            <button class="start-btn"><a href="#">Стартирай демо</a></button>
+        </div>
+    </div>
+
+    <div id="Loyality" class="tabcontent animated fadeInRight">
+        <div class="use-cases">
+            <h1>ПРОГРАМА ЗА ЛОЯЛНОСТ</h1>
+            <p>Програмата е уникално решение, което позволява на нашите лоялни компании да отключат силата на отвореното 
+                банкиране по съвместим начин дори при липса на собствен лиценз за AISP, с минимални ресурси. Чрез ПРОГРАМА ЛОЯЛНОСТ 
+                компаниите могат да започнат да използват PSD2 канали с данни в реално време от целия ЕС. Айрис се занимава с всички 
+                технически въпроси, въпроси, за сигурността и т.н., така че нашите партньори могат да се фокусират върху предоставянето 
+                на страхотни услуги.</p>
+        </div>
+        <div class="usability">
+            <div class="usability-icon">
+                <img src="./images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (7).png" alt="">
+                <h4>МИНИМАЛНИ РЕСУРСИ</h4>
+            </div>
+            <div class="usability-icon">
+                <img src="./images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (10).png" alt="">
+                <h4>ДОПЪЛНИТЕЛНА СТОЙНОСТ</h4>
+            </div>
+            <div class="usability-icon">
+                <img src="./images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (8).png" alt="">
+                <h4>СВЕТОВНА СВЪРЗАНОСТ</h4>
+            </div>
+            <div class="usability-icon">
+                <img src="./images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (9).png" alt="">
+                <h4>БЕЗ ТАКСА ИНФРАСТРУКТУРА</h4>
+            </div>
+            <div class="usability-icon">
+                <img src="./images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (11).png" alt="">
+                <h4>ПОЕМАНЕ НА PCU ПРОЦЕСИ</h4>
+            </div>
+            <div class="usability-icon">
+                <img src="./images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (12).png" alt="">
+                <h4>ЛЕСНО МОДИФИЦИРАНЕ</h4>
+            </div>
+        </div>
+
+        <div class="use-cases-btn">
+            <button class="see-more-btn"><a href="#">Виж още</a></button>
+            <button class="start-btn"><a href="#">Стартирай демо</a></button>
+        </div>
+    </div>
+
+    <div id="Personal finance" class="tabcontent animated fadeInRight">
+        <div class="use-cases">
+            <h1>ЛИЧНИ ФИНАНСИ</h1>
+            <p>Програмата е уникално решение, което позволява на нашите лоялни компании да отключат силата на отвореното 
+                банкиране по съвместим начин дори при липса на собствен лиценз за AISP, с минимални ресурси. Чрез ПРОГРАМА ЛОЯЛНОСТ 
+                компаниите могат да започнат да използват PSD2 канали с данни в реално време от целия ЕС. Айрис се занимава с всички 
+                технически въпроси, въпроси, за сигурността и т.н., така че нашите партньори могат да се фокусират върху предоставянето 
+                на страхотни услуги.</p>
+        </div>
+        <div class="usability">
+            <div class="usability-icon">
+                <img src="./images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (7).png" alt="">
+                <h4>МИНИМАЛНИ РЕСУРСИ</h4>
+            </div>
+            <div class="usability-icon">
+                <img src="./images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (10).png" alt="">
+                <h4>ДОПЪЛНИТЕЛНА СТОЙНОСТ</h4>
+            </div>
+            <div class="usability-icon">
+                <img src="./images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (8).png" alt="">
+                <h4>СВЕТОВНА СВЪРЗАНОСТ</h4>
+            </div>
+            <div class="usability-icon">
+                <img src="./images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (9).png" alt="">
+                <h4>БЕЗ ТАКСА ИНФРАСТРУКТУРА</h4>
+            </div>
+            <div class="usability-icon">
+                <img src="./images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (11).png" alt="">
+                <h4>ПОЕМАНЕ НА PCU ПРОЦЕСИ</h4>
+            </div>
+            <div class="usability-icon">
+                <img src="./images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (12).png" alt="">
+                <h4>ЛЕСНО МОДИФИЦИРАНЕ</h4>
+            </div>
+        </div>
+
+        <div class="use-cases-btn">
+            <button class="see-more-btn"><a href="#">Виж още</a></button>
+            <button class="start-btn"><a href="#">Стартирай демо</a></button>
+        </div>
+    </div>
+
+    <div id="Digital banking" class="tabcontent animated fadeInRight">
+        <div class="use-cases">
+            <h1>ДИГИТАЛНО БАНКИРАНЕ</h1>
+            <p>Програмата е уникално решение, което позволява на нашите лоялни компании да отключат силата на отвореното 
+                банкиране по съвместим начин дори при липса на собствен лиценз за AISP, с минимални ресурси. Чрез ПРОГРАМА ЛОЯЛНОСТ 
+                компаниите могат да започнат да използват PSD2 канали с данни в реално време от целия ЕС. Айрис се занимава с всички 
+                технически въпроси, въпроси, за сигурността и т.н., така че нашите партньори могат да се фокусират върху предоставянето 
+                на страхотни услуги.</p>
+        </div>
+        <div class="usability">
+            <div class="usability-icon">
+                <img src="./images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (7).png" alt="">
+                <h4>МИНИМАЛНИ РЕСУРСИ</h4>
+            </div>
+            <div class="usability-icon">
+                <img src="./images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (10).png" alt="">
+                <h4>ДОПЪЛНИТЕЛНА СТОЙНОСТ</h4>
+            </div>
+            <div class="usability-icon">
+                <img src="./images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (8).png" alt="">
+                <h4>СВЕТОВНА СВЪРЗАНОСТ</h4>
+            </div>
+            <div class="usability-icon">
+                <img src="./images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (9).png" alt="">
+                <h4>БЕЗ ТАКСА ИНФРАСТРУКТУРА</h4>
+            </div>
+            <div class="usability-icon">
+                <img src="./images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (11).png" alt="">
+                <h4>ПОЕМАНЕ НА PCU ПРОЦЕСИ</h4>
+            </div>
+            <div class="usability-icon">
+                <img src="./images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (12).png" alt="">
+                <h4>ЛЕСНО МОДИФИЦИРАНЕ</h4>
+            </div>
+        </div>
+
+        <div class="use-cases-btn">
+            <button class="see-more-btn"><a href="#">Виж още</a></button>
+            <button class="start-btn"><a href="#">Стартирай демо</a></button>
+        </div>
+    </div>
+
+    <div id="Lending" class="tabcontent animated fadeInRight">
+        <div class="use-cases">
+            <h1>КРЕДИТИРАНЕ</h1>
+            <p>Програмата е уникално решение, което позволява на нашите лоялни компании да отключат силата на отвореното 
+                банкиране по съвместим начин дори при липса на собствен лиценз за AISP, с минимални ресурси. Чрез ПРОГРАМА ЛОЯЛНОСТ 
+                компаниите могат да започнат да използват PSD2 канали с данни в реално време от целия ЕС. Айрис се занимава с всички 
+                технически въпроси, въпроси, за сигурността и т.н., така че нашите партньори могат да се фокусират върху предоставянето 
+                на страхотни услуги.</p>
+        </div>
+        <div class="usability">
+            <div class="usability-icon">
+                <img src="./images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (7).png" alt="">
+                <h4>МИНИМАЛНИ РЕСУРСИ</h4>
+            </div>
+            <div class="usability-icon">
+                <img src="./images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (10).png" alt="">
+                <h4>ДОПЪЛНИТЕЛНА СТОЙНОСТ</h4>
+            </div>
+            <div class="usability-icon">
+                <img src="./images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (8).png" alt="">
+                <h4>СВЕТОВНА СВЪРЗАНОСТ</h4>
+            </div>
+            <div class="usability-icon">
+                <img src="./images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (9).png" alt="">
+                <h4>БЕЗ ТАКСА ИНФРАСТРУКТУРА</h4>
+            </div>
+            <div class="usability-icon">
+                <img src="./images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (11).png" alt="">
+                <h4>ПОЕМАНЕ НА PCU ПРОЦЕСИ</h4>
+            </div>
+            <div class="usability-icon">
+                <img src="./images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (12).png" alt="">
+                <h4>ЛЕСНО МОДИФИЦИРАНЕ</h4>
+            </div>
+        </div>
+
+        <div class="use-cases-btn">
+            <button class="see-more-btn"><a href="#">Виж още</a></button>
+            <button class="start-btn"><a href="#">Стартирай демо</a></button>
+        </div>
+    </div>
+
+    <div id="Risk assessment" class="tabcontent animated fadeInRight">
+        <div class="use-cases">
+            <h1>ОЦЕНКА НА РИСКА</h1>
+            <p>Програмата е уникално решение, което позволява на нашите лоялни компании да отключат силата на отвореното 
+                банкиране по съвместим начин дори при липса на собствен лиценз за AISP, с минимални ресурси. Чрез ПРОГРАМА ЛОЯЛНОСТ 
+                компаниите могат да започнат да използват PSD2 канали с данни в реално време от целия ЕС. Айрис се занимава с всички 
+                технически въпроси, въпроси, за сигурността и т.н., така че нашите партньори могат да се фокусират върху предоставянето 
+                на страхотни услуги.</p>
+        </div>
+        <div class="usability">
+            <div class="usability-icon">
+                <img src="./images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (7).png" alt="">
+                <h4>МИНИМАЛНИ РЕСУРСИ</h4>
+            </div>
+            <div class="usability-icon">
+                <img src="./images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (10).png" alt="">
+                <h4>ДОПЪЛНИТЕЛНА СТОЙНОСТ</h4>
+            </div>
+            <div class="usability-icon">
+                <img src="./images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (8).png" alt="">
+                <h4>СВЕТОВНА СВЪРЗАНОСТ</h4>
+            </div>
+            <div class="usability-icon">
+                <img src="./images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (9).png" alt="">
+                <h4>БЕЗ ТАКСА ИНФРАСТРУКТУРА</h4>
+            </div>
+            <div class="usability-icon">
+                <img src="./images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (11).png" alt="">
+                <h4>ПОЕМАНЕ НА PCU ПРОЦЕСИ</h4>
+            </div>
+            <div class="usability-icon">
+                <img src="./images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (12).png" alt="">
+                <h4>ЛЕСНО МОДИФИЦИРАНЕ</h4>
+            </div>
+        </div>
+
+        <div class="use-cases-btn">
+            <button class="see-more-btn"><a href="#">Виж още</a></button>
+            <button class="start-btn"><a href="#">Стартирай демо</a></button>
+        </div>
+    </div>
+
+    <div id="E-commerce" class="tabcontent animated fadeInRight">
+        <div class="use-cases">
+            <h1>ЕЛЕКТРОННА ТЪРГОВИЯ</h1>
+            <p>Програмата е уникално решение, което позволява на нашите лоялни компании да отключат силата на отвореното 
+                банкиране по съвместим начин дори при липса на собствен лиценз за AISP, с минимални ресурси. Чрез ПРОГРАМА ЛОЯЛНОСТ 
+                компаниите могат да започнат да използват PSD2 канали с данни в реално време от целия ЕС. Айрис се занимава с всички 
+                технически въпроси, въпроси, за сигурността и т.н., така че нашите партньори могат да се фокусират върху предоставянето 
+                на страхотни услуги.</p>
+        </div>
+        <div class="usability">
+            <div class="usability-icon">
+                <img src="./images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (7).png" alt="">
+                <h4>МИНИМАЛНИ РЕСУРСИ</h4>
+            </div>
+            <div class="usability-icon">
+                <img src="./images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (10).png" alt="">
+                <h4>ДОПЪЛНИТЕЛНА СТОЙНОСТ</h4>
+            </div>
+            <div class="usability-icon">
+                <img src="./images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (8).png" alt="">
+                <h4>СВЕТОВНА СВЪРЗАНОСТ</h4>
+            </div>
+            <div class="usability-icon">
+                <img src="./images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (9).png" alt="">
+                <h4>БЕЗ ТАКСА ИНФРАСТРУКТУРА</h4>
+            </div>
+            <div class="usability-icon">
+                <img src="./images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (11).png" alt="">
+                <h4>ПОЕМАНЕ НА PCU ПРОЦЕСИ</h4>
+            </div>
+            <div class="usability-icon">
+                <img src="./images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (12).png" alt="">
+                <h4>ЛЕСНО МОДИФИЦИРАНЕ</h4>
+            </div>
+        </div>
+
+        <div class="use-cases-btn">
+            <button class="see-more-btn"><a href="#">Виж още</a></button>
+            <button class="start-btn"><a href="#">Стартирай демо</a></button>
+        </div>
+    </div>
+
+    <div id="TPP" class="tabcontent animated fadeInRight">
+        <div class="use-cases">
+            <h1>TPP</h1>
+            <p>Програмата е уникално решение, което позволява на нашите лоялни компании да отключат силата на отвореното 
+                банкиране по съвместим начин дори при липса на собствен лиценз за AISP, с минимални ресурси. Чрез ПРОГРАМА ЛОЯЛНОСТ 
+                компаниите могат да започнат да използват PSD2 канали с данни в реално време от целия ЕС. Айрис се занимава с всички 
+                технически въпроси, въпроси, за сигурността и т.н., така че нашите партньори могат да се фокусират върху предоставянето 
+                на страхотни услуги.</p>
+        </div>
+        <div class="usability">
+            <div class="usability-icon">
+                <img src="./images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (7).png" alt="">
+                <h4>МИНИМАЛНИ РЕСУРСИ</h4>
+            </div>
+            <div class="usability-icon">
+                <img src="./images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (10).png" alt="">
+                <h4>ДОПЪЛНИТЕЛНА СТОЙНОСТ</h4>
+            </div>
+            <div class="usability-icon">
+                <img src="./images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (8).png" alt="">
+                <h4>СВЕТОВНА СВЪРЗАНОСТ</h4>
+            </div>
+            <div class="usability-icon">
+                <img src="./images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (9).png" alt="">
+                <h4>БЕЗ ТАКСА ИНФРАСТРУКТУРА</h4>
+            </div>
+            <div class="usability-icon">
+                <img src="./images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (11).png" alt="">
+                <h4>ПОЕМАНЕ НА PCU ПРОЦЕСИ</h4>
+            </div>
+            <div class="usability-icon">
+                <img src="./images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (12).png" alt="">
+                <h4>ЛЕСНО МОДИФИЦИРАНЕ</h4>
+            </div>
+        </div>
+
+        <div class="use-cases-btn">
+            <button class="see-more-btn"><a href="#">Виж още</a></button>
+            <button class="start-btn"><a href="#">Стартирай демо</a></button>
+        </div>
+    </div>
+
+    <div id="KYC" class="tabcontent animated fadeInRight">
+        <div class="use-cases">
+            <h1>KYC</h1>
+            <p>Програмата е уникално решение, което позволява на нашите лоялни компании да отключат силата на отвореното 
+                банкиране по съвместим начин дори при липса на собствен лиценз за AISP, с минимални ресурси. Чрез ПРОГРАМА ЛОЯЛНОСТ 
+                компаниите могат да започнат да използват PSD2 канали с данни в реално време от целия ЕС. Айрис се занимава с всички 
+                технически въпроси, въпроси, за сигурността и т.н., така че нашите партньори могат да се фокусират върху предоставянето 
+                на страхотни услуги.</p>
+        </div>
+        <div class="usability">
+            <div class="usability-icon">
+                <img src="./images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (7).png" alt="">
+                <h4>МИНИМАЛНИ РЕСУРСИ</h4>
+            </div>
+            <div class="usability-icon">
+                <img src="./images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (10).png" alt="">
+                <h4>ДОПЪЛНИТЕЛНА СТОЙНОСТ</h4>
+            </div>
+            <div class="usability-icon">
+                <img src="./images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (8).png" alt="">
+                <h4>СВЕТОВНА СВЪРЗАНОСТ</h4>
+            </div>
+            <div class="usability-icon">
+                <img src="./images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (9).png" alt="">
+                <h4>БЕЗ ТАКСА ИНФРАСТРУКТУРА</h4>
+            </div>
+            <div class="usability-icon">
+                <img src="./images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (11).png" alt="">
+                <h4>ПОЕМАНЕ НА PCU ПРОЦЕСИ</h4>
+            </div>
+            <div class="usability-icon">
+                <img src="./images/urn_aaid_sc_US_b23c3a4c-bb1e-43ae-976f-578d5d261c65 (12).png" alt="">
+                <h4>ЛЕСНО МОДИФИЦИРАНЕ</h4>
+            </div>
+        </div>
+
+        <div class="use-cases-btn">
+            <button class="see-more-btn"><a href="#">Виж още</a></button>
+            <button class="start-btn"><a href="#">Стартирай демо</a></button>
+        </div>
+    </div>
+
+    <!-- END IUSE CASES -->
+</body>
+</html>
